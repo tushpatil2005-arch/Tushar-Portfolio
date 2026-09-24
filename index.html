@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- ── Primary SEO ── -->
+  <title>Tushar Patil | Computer Science Engineering Student | Aspiring Software Engineer</title>
+  <meta name="description" content="Portfolio of Tushar Patil, a Computer Science Engineering student graduating in 2027, showcasing software development skills, projects, internships, certifications and technical interests." />
+  <meta name="author" content="Tushar Patil" />
+  <meta name="keywords" content="Tushar Patil, Computer Science, Software Engineer, Portfolio, Python, Java, C++, Web Development, AI, ML, Gangamai College" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- ── Open Graph ── -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Tushar Patil | CS Engineering Student & Aspiring Software Engineer" />
+  <meta property="og:description" content="Portfolio of Tushar Patil — B.E. Computer Science Engineering student at Gangamai College, Dhule. Graduating 2027." />
+  <meta property="og:url"         content="https://tushpatil2005-arch.github.io" />
+  <meta property="og:image"       content="assets/images/profile.jpg" />
+  <meta property="og:site_name"   content="Tushar Patil Portfolio" />
+
+  <!-- ── Twitter Card ── -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Tushar Patil | CS Engineering Student" />
+  <meta name="twitter:description" content="Portfolio of Tushar Patil, a CS Engineering student graduating in 2027." />
+  <meta name="twitter:image"       content="assets/images/profile.jpg" />
+
+  <!-- ── Favicon (inline SVG) ── -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23050d1a'/><text y='.9em' font-size='70' x='10' fill='%2300d4ff'>T</text></svg>" />
+
+  <!-- ── Google Fonts ── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"  href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" />
+
+  <!-- ── Font Awesome ── -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- ── Stylesheet ── -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- ── Canonical ── -->
+  <link rel="canonical" href="https://tushpatil2005-arch.github.io" />
+
+  <!-- ── Structured Data ── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Tushar Patil",
+    "url": "https://tushpatil2005-arch.github.io",
+    "email": "tushpatil2005@gmail.com",
+    "sameAs": [
+      "https://github.com/tushpatil2005-arch",
+      "https://www.linkedin.com/in/tushar-patil-2308a3328"
+    ],
+    "jobTitle": "Computer Science Engineering Student",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Gangamai College of Engineering, Dhule"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Particle canvas (behind everything) -->
+  <canvas id="particles-canvas" aria-hidden="true"
+    style="position:fixed;inset:0;z-index:0;pointer-events:none;"></canvas>
+
+  <!-- ══════════════════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════════════════ -->
+  <header id="navbar" role="banner">
+    <div class="nav-inner">
+      <!-- Logo -->
+      <a href="#home" class="nav-logo" aria-label="Tushar Patil — Home">
+        <span class="logo-first">Tushar</span><span class="logo-dot">.</span><span class="logo-last">Patil</span>
+      </a>
+
+      <!-- Desktop nav -->
+      <nav aria-label="Primary navigation">
+        <ul class="nav-links" role="list">
+          <li><a href="#home"          class="nav-link active">Home</a></li>
+          <li><a href="#about"         class="nav-link">About</a></li>
+          <li><a href="#skills"        class="nav-link">Skills</a></li>
+          <li><a href="#experience"    class="nav-link">Experience</a></li>
+          <li><a href="#projects"      class="nav-link">Projects</a></li>
+          <li><a href="#certifications"class="nav-link">Certifications</a></li>
+          <li><a href="#education"     class="nav-link">Education</a></li>
+          <li><a href="#contact"       class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="Tushar_Resume.pdf" download="Tushar_Patil_Resume.pdf"
+         class="btn nav-cta" aria-label="Download Tushar Patil's resume">
+        <i class="fas fa-download"></i> Resume
+      </a>
+
+      <!-- Hamburger (mobile) -->
+      <button class="nav-toggle" id="nav-toggle"
+              aria-label="Toggle navigation menu" aria-expanded="false"
+              aria-controls="nav-mobile">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile nav drawer -->
+  <nav id="nav-mobile" aria-label="Mobile navigation" role="navigation">
+    <a href="#home"          class="nav-link mobile-nav-link">Home</a>
+    <a href="#about"         class="nav-link mobile-nav-link">About</a>
+    <a href="#skills"        class="nav-link mobile-nav-link">Skills</a>
+    <a href="#experience"    class="nav-link mobile-nav-link">Experience</a>
+    <a href="#projects"      class="nav-link mobile-nav-link">Projects</a>
+    <a href="#certifications"class="nav-link mobile-nav-link">Certifications</a>
+    <a href="#education"     class="nav-link mobile-nav-link">Education</a>
+    <a href="#contact"       class="nav-link mobile-nav-link">Contact</a>
+    <a href="Tushar_Resume.pdf" download="Tushar_Patil_Resume.pdf"
+       class="btn nav-cta mobile-nav-link">
+      <i class="fas fa-download"></i> Download Resume
+    </a>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- ══════════════════════════════════════════════
+         HERO SECTION
+    ══════════════════════════════════════════════ -->
+    <section id="home" aria-label="Hero — Introduction">
+      <div class="hero-bg-orb hero-bg-orb-1" aria-hidden="true"></div>
+      <div class="hero-bg-orb hero-bg-orb-2" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <!-- Left column -->
+        <div class="hero-left">
+          <div class="hero-badge" aria-label="Available for opportunities">
+            <span class="hero-badge-dot"></span>
+            Available for Internships &amp; Fresher Roles
+          </div>
+
+          <h1 class="hero-name">
+            Hi, I'm<br>
+            <span class="hero-name-accent">Tushar Patil</span>
+          </h1>
+
+          <p class="hero-title">
+            CS Engineering Student |
+            <strong><span id="typed-text"></span><span class="typed-cursor">|</span></strong>
+          </p>
+
+          <p class="hero-desc">
+            Computer Science Engineering student graduating in 2027, passionate about
+            <strong>software development</strong>, <strong>programming</strong>, data, and emerging technologies.
+            Building practical projects and continuously developing industry-relevant technical skills.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fas fa-rocket"></i> View Projects
+            </a>
+            <a href="Tushar_Resume.pdf" download="Tushar_Patil_Resume.pdf"
+               class="btn btn-outline">
+              <i class="fas fa-download"></i> Download Resume
+            </a>
+            <a href="#contact" class="btn btn-ghost">
+              <i class="fas fa-envelope"></i> Contact Me
+            </a>
+          </div>
+
+          <div class="hero-socials" aria-label="Social links">
+            <a href="https://github.com/tushpatil2005-arch"
+               target="_blank" rel="noopener noreferrer"
+               class="social-btn" aria-label="GitHub profile — opens in new tab"
+               title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/tushar-patil-2308a3328"
+               target="_blank" rel="noopener noreferrer"
+               class="social-btn" aria-label="LinkedIn profile — opens in new tab"
+               title="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:tushpatil2005@gmail.com"
+               class="social-btn" aria-label="Send email to Tushar Patil"
+               title="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div><!-- /hero-left -->
+
+        <!-- Right column — Avatar -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-avatar-wrap">
+            <div class="hero-avatar-glow"></div>
+            <div class="hero-avatar-ring"></div>
+            <img src="assets/images/profile.jpg"
+                 alt="Tushar Patil — Computer Science Engineering Student"
+                 class="hero-avatar-img"
+                 loading="eager" />
+            <!-- Floating tags -->
+            <div class="hero-tag hero-tag-1">
+              <i class="fab fa-python"></i>Python
+            </div>
+            <div class="hero-tag hero-tag-2">
+              <i class="fab fa-java"></i>Java
+            </div>
+            <div class="hero-tag hero-tag-3">
+              <i class="fas fa-robot"></i>AI / ML
+            </div>
+          </div>
+        </div><!-- /hero-visual -->
+      </div><!-- /hero-inner -->
+    </section><!-- /#home -->
+
+
+    <!-- ══════════════════════════════════════════════
+         ABOUT
+    ══════════════════════════════════════════════ -->
+    <section id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Who I Am</span>
+          <h2 class="section-title">About <span>Me</span></h2>
+          <span class="section-divider" aria-hidden="true"></span>
+        </div>
+
+        <div class="about-inner">
+          <!-- Text -->
+          <div class="about-text reveal-left">
+            <p>
+              I'm <span class="about-highlight">Tushar Patil</span>, a
+              <span class="about-highlight">Computer Science Engineering</span> student at
+              Gangamai College of Engineering, Dhule, Maharashtra, with an expected graduation in 2027.
+            </p>
+            <p>
+              My primary interests lie in <span class="about-highlight">software development</span>,
+              <span class="about-highlight">data analytics</span>,
+              <span class="about-highlight">data science</span>, and
+              <span class="about-highlight">AI/ML</span>. I enjoy translating ideas into
+              functional, well-structured code and continuously building on my technical foundation
+              through hands-on projects.
+            </p>
+            <p>
+              I've had the opportunity to work as an
+              <span class="about-highlight">AI Intern at Acmegrade</span> and a
+              <span class="about-highlight">Web Development Intern at Codsoft</span>,
+              which deepened my understanding of applied technology in real-world contexts.
+              I am actively seeking internship and fresher opportunities in software/product-based
+              technology companies.
+            </p>
+            <p>
+              Outside of tech, I'm passionate about
+              <span class="about-highlight">football</span> — a sport that sharpens my team
+              collaboration and strategic thinking, skills I bring to every project I work on.
+            </p>
+
+            <div class="about-stats">
+              <div class="about-stat-card">
+                <div class="stat-number">2027</div>
+                <div class="stat-label">Expected Graduation</div>
+              </div>
+              <div class="about-stat-card">
+                <div class="stat-number">2+</div>
+                <div class="stat-label">Internships Completed</div>
+              </div>
+              <div class="about-stat-card">
+                <div class="stat-number">5+</div>
+                <div class="stat-label">Projects Built</div>
+              </div>
+              <div class="about-stat-card">
+                <div class="stat-number">3+</div>
+                <div class="stat-label">Certifications Earned</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Info grid -->
+          <div class="about-info-grid reveal-right">
+            <div class="about-info-item">
+              <div class="about-info-icon" aria-hidden="true">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div>
+                <div class="about-info-label">Degree</div>
+                <div class="about-info-value">B.E. Computer Science Engineering</div>
+              </div>
+            </div>
+
+            <div class="about-info-item">
+              <div class="about-info-icon" aria-hidden="true">
+                <i class="fas fa-university"></i>
+              </div>
+              <div>
+                <div class="about-info-label">College</div>
+                <div class="about-info-value">Gangamai College of Engineering, Dhule</div>
+              </div>
+            </div>
+
+            <div class="about-info-item">
+              <div class="about-info-icon" aria-hidden="true">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <div class="about-info-label">Location</div>
+                <div class="about-info-value">Pune, Maharashtra, India</div>
+              </div>
+            </div>
+
+            <div class="about-info-item">
+              <div class="about-info-icon" aria-hidden="true">
+                <i class="fas fa-bullseye"></i>
+              </div>
+              <div>
+                <div class="about-info-label">Career Goal</div>
+                <div class="about-info-value">Software Engineer at a product/technology company</div>
+              </div>
+            </div>
+
+            <div class="about-info-item">
+              <div class="about-info-icon" aria-hidden="true">
+                <i class="fas fa-heart"></i>
+              </div>
+              <div>
+                <div class="about-info-label">Interests</div>
+                <div class="about-info-value">Software Dev · Data Science · AI/ML · Football</div>
+              </div>
+            </div>
+
+            <div class="about-info-item">
+              <div class="about-info-icon" aria-hidden="true">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <div class="about-info-label">Email</div>
+                <div class="about-info-value">
+                  <a href="mailto:tushpatil2005@gmail.com"
+                     style="color:var(--accent);font-weight:600;">
+                    tushpatil2005@gmail.com
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div><!-- /about-info-grid -->
+        </div><!-- /about-inner -->
+      </div>
+    </section><!-- /#about -->
+
+
+    <!-- ══════════════════════════════════════════════
+         SKILLS
+    ══════════════════════════════════════════════ -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">What I Know</span>
+          <h2 class="section-title">Technical <span>Skills</span></h2>
+          <span class="section-divider" aria-hidden="true"></span>
+        </div>
+
+        <div class="skills-grid stagger">
+          <!-- Programming Languages -->
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon" aria-hidden="true">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3 class="skill-cat-title">Programming Languages</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag"><i class="fab fa-python"></i>Python</span>
+              <span class="skill-tag"><i class="fas fa-code"></i>C++</span>
+              <span class="skill-tag"><i class="fab fa-java"></i>Java</span>
+              <span class="skill-tag"><i class="fas fa-database"></i>SQL</span>
+            </div>
+          </div>
+
+          <!-- Web Development -->
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon" aria-hidden="true">
+                <i class="fas fa-globe"></i>
+              </div>
+              <h3 class="skill-cat-title">Web Development</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag"><i class="fab fa-html5"></i>HTML5</span>
+              <span class="skill-tag"><i class="fab fa-css3-alt"></i>CSS3</span>
+              <span class="skill-tag"><i class="fab fa-js-square"></i>JavaScript</span>
+              <span class="skill-tag"><i class="fab fa-bootstrap"></i>Bootstrap</span>
+            </div>
+          </div>
+
+          <!-- Data / AI / ML -->
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon" aria-hidden="true">
+                <i class="fas fa-brain"></i>
+              </div>
+              <h3 class="skill-cat-title">Data / AI &amp; ML</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag"><i class="fas fa-robot"></i>Machine Learning (basics)</span>
+              <span class="skill-tag"><i class="fas fa-chart-bar"></i>Data Analysis</span>
+              <span class="skill-tag"><i class="fas fa-table"></i>NumPy</span>
+              <span class="skill-tag"><i class="fas fa-chart-line"></i>Matplotlib</span>
+            </div>
+          </div>
+
+          <!-- Tools & Technologies -->
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon" aria-hidden="true">
+                <i class="fas fa-tools"></i>
+              </div>
+              <h3 class="skill-cat-title">Tools &amp; Technologies</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag"><i class="fab fa-git-alt"></i>Git</span>
+              <span class="skill-tag"><i class="fab fa-github"></i>GitHub</span>
+              <span class="skill-tag"><i class="fas fa-terminal"></i>VS Code</span>
+              <span class="skill-tag"><i class="fas fa-layer-group"></i>OOP Concepts</span>
+              <span class="skill-tag"><i class="fas fa-database"></i>DBMS Basics</span>
+            </div>
+          </div>
+
+          <!-- Computer Science Fundamentals -->
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon" aria-hidden="true">
+                <i class="fas fa-microchip"></i>
+              </div>
+              <h3 class="skill-cat-title">CS Fundamentals</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag"><i class="fas fa-sitemap"></i>Data Structures</span>
+              <span class="skill-tag"><i class="fas fa-cogs"></i>Algorithms</span>
+              <span class="skill-tag"><i class="fas fa-server"></i>OS Basics</span>
+              <span class="skill-tag"><i class="fas fa-network-wired"></i>Computer Networks</span>
+            </div>
+          </div>
+
+          <!-- Soft Skills -->
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon" aria-hidden="true">
+                <i class="fas fa-users"></i>
+              </div>
+              <h3 class="skill-cat-title">Professional Skills</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag"><i class="fas fa-lightbulb"></i>Problem Solving</span>
+              <span class="skill-tag"><i class="fas fa-people-group"></i>Teamwork</span>
+              <span class="skill-tag"><i class="fas fa-book-open"></i>Continuous Learning</span>
+              <span class="skill-tag"><i class="fas fa-comments"></i>Communication</span>
+            </div>
+          </div>
+        </div><!-- /skills-grid -->
+      </div>
+    </section><!-- /#skills -->
+
+
+    <!-- ══════════════════════════════════════════════
+         EXPERIENCE
+    ══════════════════════════════════════════════ -->
+    <section id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Where I've Worked</span>
+          <h2 class="section-title">Work <span>Experience</span></h2>
+          <span class="section-divider" aria-hidden="true"></span>
+        </div>
+
+        <div class="timeline">
+          <!-- Codsoft internship -->
+          <article class="timeline-item reveal">
+            <div class="timeline-dot-wrap" aria-hidden="true">
+              <div class="timeline-dot">
+                <i class="fas fa-briefcase"></i>
+              </div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-period">2025</span>
+                <span class="timeline-org">Codsoft</span>
+              </div>
+              <h3 class="timeline-role">Web Development Intern</h3>
+              <p class="timeline-desc">
+                Worked as a Web Development Intern at Codsoft, contributing to frontend development
+                assignments and building practical web development skills. Gained hands-on experience
+                with industry-standard web design and development practices, including responsive
+                layouts, semantic HTML, CSS styling, and JavaScript-based interactions.
+              </p>
+              <div class="timeline-tech-list" aria-label="Technologies used">
+                <span class="tech-badge"><i class="fab fa-html5"></i> HTML5</span>
+                <span class="tech-badge"><i class="fab fa-css3-alt"></i> CSS3</span>
+                <span class="tech-badge"><i class="fab fa-js-square"></i> JavaScript</span>
+                <span class="tech-badge"><i class="fab fa-bootstrap"></i> Bootstrap</span>
+                <span class="tech-badge"><i class="fas fa-globe"></i> Responsive Design</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Acmegrade internship -->
+          <article class="timeline-item reveal">
+            <div class="timeline-dot-wrap" aria-hidden="true">
+              <div class="timeline-dot">
+                <i class="fas fa-robot"></i>
+              </div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-period">2024</span>
+                <span class="timeline-org">Acmegrade</span>
+              </div>
+              <h3 class="timeline-role">AI Intern</h3>
+              <p class="timeline-desc">
+                Completed an AI internship at Acmegrade, gaining exposure to machine learning concepts,
+                data preprocessing workflows, and practical AI application development. Worked on
+                classification tasks, dataset analysis, and machine learning model training using Python.
+              </p>
+              <div class="timeline-tech-list" aria-label="Technologies used">
+                <span class="tech-badge"><i class="fab fa-python"></i> Python</span>
+                <span class="tech-badge"><i class="fas fa-robot"></i> Machine Learning</span>
+                <span class="tech-badge"><i class="fas fa-table"></i> Data Analysis</span>
+                <span class="tech-badge"><i class="fas fa-brain"></i> AI Concepts</span>
+              </div>
+            </div>
+          </article>
+        </div><!-- /timeline -->
+      </div>
+    </section><!-- /#experience -->
+
+
+    <!-- ══════════════════════════════════════════════
+         PROJECTS
+    ══════════════════════════════════════════════ -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">What I've Built</span>
+          <h2 class="section-title">Featured <span>Projects</span></h2>
+          <span class="section-divider" aria-hidden="true"></span>
+        </div>
+
+        <!-- Filter buttons -->
+        <div class="projects-filter" role="group" aria-label="Filter projects by technology">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="ai">AI / Python</button>
+          <button class="filter-btn" data-filter="cpp">C++</button>
+          <button class="filter-btn" data-filter="java">Java</button>
+        </div>
+
+        <!-- Cards injected by JS -->
+        <div class="projects-grid" id="projects-grid" aria-live="polite"></div>
+
+      </div>
+    </section><!-- /#projects -->
+
+
+    <!-- ══════════════════════════════════════════════
+         CERTIFICATIONS
+    ══════════════════════════════════════════════ -->
+    <section id="certifications">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Credentials</span>
+          <h2 class="section-title">Certifications &amp; <span>Achievements</span></h2>
+          <span class="section-divider" aria-hidden="true"></span>
+        </div>
+
+        <div class="certs-grid stagger">
+          <!-- Java Certificate -->
+          <div class="cert-card">
+            <div class="cert-icon" aria-hidden="true">
+              <i class="fab fa-java"></i>
+            </div>
+            <div>
+              <h3 class="cert-name">Java Programming</h3>
+              <p class="cert-issuer">Certified by a recognized issuing authority</p>
+              <p class="cert-date">2026</p>
+              <p class="cert-topic">Core Java, OOP, Collections, Exception Handling</p>
+              <a href="Java_Certificate.pdf" target="_blank" rel="noopener noreferrer"
+                 class="btn btn-outline btn-sm" style="margin-top:0.75rem;" aria-label="Open Java Certificate">
+                <i class="fas fa-external-link-alt"></i> View Certificate
+              </a>
+            </div>
+          </div>
+
+          <!-- SQL Certificate -->
+          <div class="cert-card">
+            <div class="cert-icon" aria-hidden="true">
+              <i class="fas fa-database"></i>
+            </div>
+            <div>
+              <h3 class="cert-name">SQL &amp; Database Management</h3>
+              <p class="cert-issuer">Certified by a recognized issuing authority</p>
+              <p class="cert-date">2026</p>
+              <p class="cert-topic">SQL Queries, Joins, Aggregations, DBMS Concepts</p>
+              <a href="SQL_Certificate.pdf" target="_blank" rel="noopener noreferrer"
+                 class="btn btn-outline btn-sm" style="margin-top:0.75rem;" aria-label="Open SQL Certificate">
+                <i class="fas fa-external-link-alt"></i> View Certificate
+              </a>
+            </div>
+          </div>
+
+          <!-- Codsoft Web Dev -->
+          <div class="cert-card">
+            <div class="cert-icon" aria-hidden="true">
+              <i class="fab fa-html5"></i>
+            </div>
+            <div>
+              <h3 class="cert-name">Web Development Internship</h3>
+              <p class="cert-issuer">Codsoft</p>
+              <p class="cert-date">2025</p>
+              <p class="cert-topic">HTML, CSS, JavaScript, Bootstrap, Responsive Design</p>
+            </div>
+          </div>
+
+          <!-- Acmegrade AI -->
+          <div class="cert-card">
+            <div class="cert-icon" aria-hidden="true">
+              <i class="fas fa-robot"></i>
+            </div>
+            <div>
+              <h3 class="cert-name">Artificial Intelligence Internship</h3>
+              <p class="cert-issuer">Acmegrade</p>
+              <p class="cert-date">2024</p>
+              <p class="cert-topic">AI Concepts, Python, Machine Learning basics, Data Analysis</p>
+            </div>
+          </div>
+        </div><!-- /certs-grid -->
+      </div>
+    </section><!-- /#certifications -->
+
+
+    <!-- ══════════════════════════════════════════════
+         EDUCATION
+    ══════════════════════════════════════════════ -->
+    <section id="education">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Academic Background</span>
+          <h2 class="section-title">My <span>Education</span></h2>
+          <span class="section-divider" aria-hidden="true"></span>
+        </div>
+
+        <div class="edu-grid">
+          <div class="edu-card reveal">
+            <div class="edu-icon" aria-hidden="true">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3 class="edu-degree">Bachelor of Engineering — Computer Science &amp; Engineering</h3>
+            <p class="edu-institution">Gangamai College of Engineering</p>
+            <p class="edu-location">
+              <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+              Dhule, Maharashtra, India
+            </p>
+            <span class="edu-badge">
+              <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+              Expected Graduation: 2027
+            </span>
+            <p style="color:var(--text-muted);font-size:0.82rem;margin-top:1rem;line-height:1.6;">
+              Pursuing a 4-year full-time B.E. in Computer Science Engineering.
+              Studying core CS subjects including Data Structures, Algorithms, Operating Systems,
+              Computer Networks, DBMS, and OOP.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section><!-- /#education -->
+
+
+    <!-- ══════════════════════════════════════════════
+         RESUME CTA
+    ══════════════════════════════════════════════ -->
+    <section id="resume">
+      <div class="container">
+        <div class="resume-cta-box reveal">
+          <div class="resume-cta-icon" aria-hidden="true">
+            <i class="fas fa-file-alt"></i>
+          </div>
+          <h2 class="resume-cta-title">My <span style="background:var(--accent-grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Resume</span></h2>
+          <p class="resume-cta-desc">
+            Get a complete overview of my education, skills, internships, projects
+            and certifications in one document.
+          </p>
+          <div class="resume-cta-actions">
+            <a href="Tushar_Resume.pdf" download="Tushar_Patil_Resume.pdf"
+               class="btn btn-primary" aria-label="Download Tushar Patil's resume PDF">
+              <i class="fas fa-download"></i> Download Resume
+            </a>
+            <a href="Tushar_Resume.pdf" target="_blank" rel="noopener noreferrer"
+               class="btn btn-outline" aria-label="View resume in browser">
+              <i class="fas fa-eye"></i> View in Browser
+            </a>
+          </div>
+        </div>
+      </div>
+    </section><!-- /#resume -->
+
+
+    <!-- ══════════════════════════════════════════════
+         CONTACT
+    ══════════════════════════════════════════════ -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Get In Touch</span>
+          <h2 class="section-title">Let's <span>Connect</span></h2>
+          <span class="section-divider" aria-hidden="true"></span>
+        </div>
+
+        <div class="contact-inner">
+          <!-- Info side -->
+          <div class="contact-info-side reveal-left">
+            <h3>Open to Opportunities</h3>
+            <p>
+              I'm actively looking for <strong>internships</strong> and <strong>fresher roles</strong>
+              in software development, data science, and AI/ML. Feel free to reach out — I'd love
+              to connect!
+            </p>
+
+            <div class="contact-links" aria-label="Contact links">
+              <a href="mailto:tushpatil2005@gmail.com"
+                 class="contact-link-item"
+                 aria-label="Send email to tushpatil2005@gmail.com">
+                <div class="contact-link-icon" aria-hidden="true">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                  <div class="contact-link-label">Email</div>
+                  <div class="contact-link-value">tushpatil2005@gmail.com</div>
+                </div>
+              </a>
+
+              <a href="https://github.com/tushpatil2005-arch"
+                 target="_blank" rel="noopener noreferrer"
+                 class="contact-link-item"
+                 aria-label="Visit GitHub profile — opens in new tab">
+                <div class="contact-link-icon" aria-hidden="true">
+                  <i class="fab fa-github"></i>
+                </div>
+                <div>
+                  <div class="contact-link-label">GitHub</div>
+                  <div class="contact-link-value">github.com/tushpatil2005-arch</div>
+                </div>
+              </a>
+
+              <a href="https://www.linkedin.com/in/tushar-patil-2308a3328"
+                 target="_blank" rel="noopener noreferrer"
+                 class="contact-link-item"
+                 aria-label="Visit LinkedIn profile — opens in new tab">
+                <div class="contact-link-icon" aria-hidden="true">
+                  <i class="fab fa-linkedin-in"></i>
+                </div>
+                <div>
+                  <div class="contact-link-label">LinkedIn</div>
+                  <div class="contact-link-value">linkedin.com/in/tushar-patil-2308a3328</div>
+                </div>
+              </a>
+            </div>
+          </div><!-- /contact-info-side -->
+
+          <!-- Form side -->
+          <div class="contact-form-side reveal-right">
+            <form id="contact-form" novalidate aria-label="Contact form">
+              <div class="form-grid">
+                <div class="form-group">
+                  <label class="form-label" for="cf-name">Your Name</label>
+                  <input type="text" id="cf-name" name="name"
+                         class="form-input" placeholder="John Doe"
+                         autocomplete="name" required />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="cf-email">Email Address</label>
+                  <input type="email" id="cf-email" name="email"
+                         class="form-input" placeholder="john@example.com"
+                         autocomplete="email" required />
+                </div>
+                <div class="form-group full">
+                  <label class="form-label" for="cf-subject">Subject</label>
+                  <input type="text" id="cf-subject" name="subject"
+                         class="form-input" placeholder="Internship Opportunity / Project Collaboration"
+                         required />
+                </div>
+                <div class="form-group full">
+                  <label class="form-label" for="cf-message">Message</label>
+                  <textarea id="cf-message" name="message"
+                            class="form-textarea"
+                            placeholder="Hi Tushar, I wanted to reach out regarding..."
+                            required></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary form-submit">
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+
+              <p class="form-note">
+                <i class="fas fa-info-circle" aria-hidden="true"></i>
+                Clicking "Send Message" will open your default email client with the message
+                pre-filled. Your email will be sent directly to Tushar.
+              </p>
+            </form>
+          </div><!-- /contact-form-side -->
+        </div><!-- /contact-inner -->
+      </div>
+    </section><!-- /#contact -->
+
+  </main><!-- /#main-content -->
+
+
+  <!-- ══════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="footer-inner">
+      <p class="footer-copy">
+        &copy; <span id="footer-year">2026</span>
+        <a href="#home" aria-label="Back to top — Tushar Patil">Tushar Patil</a>.
+        All Rights Reserved.
+      </p>
+      <div class="footer-socials" aria-label="Footer social links">
+        <a href="https://github.com/tushpatil2005-arch"
+           target="_blank" rel="noopener noreferrer"
+           class="social-btn" aria-label="GitHub — opens in new tab"
+           title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/tushar-patil-2308a3328"
+           target="_blank" rel="noopener noreferrer"
+           class="social-btn" aria-label="LinkedIn — opens in new tab"
+           title="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:tushpatil2005@gmail.com"
+           class="social-btn" aria-label="Send email to Tushar Patil"
+           title="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ── Project Detail Modal ── -->
+  <div id="project-modal" class="modal-overlay" role="dialog"
+       aria-modal="true" aria-label="Project Details"
+       aria-labelledby="modal-title">
+    <div class="modal-box" id="modal-content">
+      <!-- Content injected by JS -->
+    </div>
+  </div>
+
+  <!-- ── Toast notification ── -->
+  <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- ── Back to top ── -->
+  <button id="back-to-top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Typed cursor style -->
+  <style>
+    .typed-cursor {
+      color: var(--accent);
+      animation: blink 0.85s step-end infinite;
+      font-weight: 300;
+    }
+    @keyframes blink { 50% { opacity: 0; } }
+  </style>
+
+  <!-- ── Main JS ── -->
+  <script src="assets/js/main.js" defer></script>
+
+</body>
+</html>
