@@ -314,6 +314,18 @@ function openModal(id) {
     <h2 class="modal-title">${p.name}</h2>
     <p class="modal-subtitle">${p.tech.join(' · ')}</p>
     <p class="modal-desc">${p.desc}</p>
+    
+    ${p.id === 1 ? `
+      <div class="project-modal-image">
+        <img
+          src="assets/images/image-classifier-result.png"
+          alt="AI Image Classifier showing automobile prediction with 85.30% confidence"
+          loading="lazy"
+        />
+        <p class="image-caption">AI Image Classification — Automobile prediction</p>
+      </div>
+    ` : ''}
+
     <div class="modal-features">
       <h4>Key Features</h4>
       <ul>${p.features.map(f => `<li>${f}</li>`).join('')}</ul>
