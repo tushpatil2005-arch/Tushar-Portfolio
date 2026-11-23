@@ -297,7 +297,8 @@ function initProjects() {
 }
 
 // ── Modal ────────────────────────────────────────────
-function openModal(id) {
+function openModal(id) 
+{
   const p = PROJECTS.find(x => x.id === id);
   if (!p) return;
 
@@ -323,6 +324,16 @@ function openModal(id) {
           loading="lazy"
         />
         <p class="image-caption">AI Image Classification — Automobile prediction</p>
+      </div>
+    ` : ''}
+        ${p.id === 1 ? `
+      <div class="project-modal-image">
+        <img
+          src="assets/images/data-classifier-result.png"
+          alt="AI Data Classifier showing dataset analysis and cleaned data"
+          loading="lazy"
+        />
+        <p class="image-caption">CSV Data Classification — Dataset analysis and cleaning</p>
       </div>
     ` : ''}
 
